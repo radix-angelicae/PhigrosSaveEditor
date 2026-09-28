@@ -1,0 +1,4832 @@
+{
+ "schema_version": 2,
+ "game": "Phigros",
+ "source_version": "主线/支线顺序由 songlist.csv（游戏内顺序，主线各章索引连续已验证）；第九章与异象曲开关由本地 playerprefs.xml 实测确认",
+ "unlock_types": {
+  "free": "默认解锁，无需前置条件",
+  "sequential": "默认仅开 EZ；同曲 HD→IN 需本难度 920000(S)，本难度 IN→AT 需 920000(S)；章节内下一曲的对应难度需上一曲对应难度 880000(A)，见各章节备注",
+  "special": "本地存档有明确开关（C8/C9/unlockFlagOf），可直接置 True",
+  "currency": "以 Data 购买后解锁（常规 EZ/HD），IN 解锁受 RKS≥11 或分数规则影响"
+ },
+ "difficulty_rules": {
+  "EZ": "各难度默认不随上一难度自动解锁；同曲 HD 需本难度达到 920000（S 评级）",
+  "HD_to_IN": "同曲 HD 达到 920000（S）解锁 IN；或同一章节（Legacy / Single 除外）上一曲 IN 达到 880000（A）解锁下一曲 IN",
+  "IN_to_AT": "同曲 IN 达到 920000（S）解锁 AT",
+  "rks_11_IN": "RKS≥11 时，Legacy 曲目与已购 Single 曲目的 IN 默认解锁；其余章节首曲 IN 默认解锁",
+  "legacy_AT_note": "Legacy 部分旧谱/Legacy 谱面可通过难度列表长按等特殊方式取得，常规不随顺序解锁"
+ },
+ "version_notes": [],
+ "chapters": [
+  {
+   "id": "legacy",
+   "title": "Chapter Legacy 过去的章节（原 1~4 章）",
+   "unlock": "free",
+   "chapter_gate": "Legacy 累计 6 个 A 及以上 → 解锁 Chapter 5",
+   "next_chapter_gate": "",
+   "notes": [],
+   "songs": [
+    {
+     "index": 1,
+     "title": "Glaciaxion",
+     "id": "Glaciaxion.SunsetRay",
+     "song": "Glaciaxion",
+     "composer": "SunsetRay",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "title": "Eradication Catastrophe",
+     "id": "EradicationCatastrophe.NceS",
+     "song": "Eradication Catastrophe",
+     "composer": "NceS",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "title": "Credits",
+     "id": "Credits.Frums",
+     "song": "Credits",
+     "composer": "Frums",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "title": "Dlyrotz",
+     "id": "Dlyrotz.Likey",
+     "song": "Dlyrotz",
+     "composer": "Likey",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "title": "Engine x Start!! (melody mix)",
+     "id": "EnginexStartmelodymix.CrossingSound",
+     "song": "Engine x Start!! (melody mix)",
+     "composer": "CrossingSound",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "title": "光",
+     "id": "光.姜米條",
+     "song": "光",
+     "composer": "姜米條",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "title": "Winter ↑cube↓",
+     "id": "Wintercube.CtymaxfeatNceS",
+     "song": "Winter ↑cube↓",
+     "composer": "Ctymax feat. NceS",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "title": "Cipher : /2&//<|0",
+     "id": "Cipher20.TetrajectoryfeatCtymax",
+     "song": "Cipher : /2&//<|0",
+     "composer": "Tetrajectory feat. Ctymax",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "title": "混乱-Confusion",
+     "id": "混乱Confusion.OnlyMyBlackScore",
+     "song": "混乱-Confusion",
+     "composer": "Only My Black Score",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "title": "FULi AUTO SHOOTER",
+     "id": "FULiAUTOSHOOTER.MYUKKE",
+     "song": "FULi AUTO SHOOTER",
+     "composer": "MYUKKE.",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 11,
+     "title": "HumaN",
+     "id": "HumaN.SOTUI",
+     "song": "HumaN",
+     "composer": "SOTUI",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "title": "[PRAW]",
+     "id": "PRAW.Bluewind",
+     "song": "[PRAW]",
+     "composer": "Bluewind",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 13,
+     "title": "Pixel Rebelz",
+     "id": "PixelRebelz.Normal1zer",
+     "song": "Pixel Rebelz",
+     "composer": "Normal1zer",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 14,
+     "title": "Cereris",
+     "id": "Cereris.SunsetRayNceS",
+     "song": "Cereris",
+     "composer": "SunsetRay/NceS",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 15,
+     "title": "Non-Melodic Ragez (MUG Edit)",
+     "id": "NonMelodicRagezMUGEdit.Normal1zer",
+     "song": "Non-Melodic Ragez (MUG Edit)",
+     "composer": "Normal1zer",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 16,
+     "title": "Sultan Rage",
+     "id": "SultanRage.MonstDeath",
+     "song": "Sultan Rage",
+     "composer": "MonstDeath",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 17,
+     "title": "Class Memories",
+     "id": "ClassMemories.AntistarfeatCtymax",
+     "song": "Class Memories",
+     "composer": "Antistar feat. Ctymax",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 18,
+     "title": "-SURREALISM-",
+     "id": "SURREALISM.Itsuki",
+     "song": "-SURREALISM-",
+     "composer": "Itsuki",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 19,
+     "title": "Bonus Time",
+     "id": "BonusTime.MegaloPaleWhite",
+     "song": "Bonus Time",
+     "composer": "Megalo_PaleWhite",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    },
+    {
+     "index": 20,
+     "title": "ENERGY SYNERGY MATRIX",
+     "id": "ENERGYSYNERGYMATRIX.Tanchiky",
+     "song": "ENERGY SYNERGY MATRIX",
+     "composer": "Tanchiky",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "free",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "chapter5",
+   "title": "Chapter 5 霓虹灯牌",
+   "unlock": "sequential",
+   "chapter_gate": "",
+   "next_chapter_gate": "",
+   "notes": [],
+   "songs": [
+    {
+     "index": 1,
+     "title": "NYA!!! (Phigros ver.)",
+     "id": "NYA.FLuoRiTe姜米條",
+     "song": "NYA!!! (Phigros ver.)",
+     "composer": "FLuoRiTe/姜米條",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "title": "JunXion Between Life And Death(VIP Mix)",
+     "id": "JunXionBetweenLifeAndDeathVIPMix.1N6Fs",
+     "song": "JunXion Between Life And Death(VIP Mix)",
+     "composer": "1N6Fs",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "title": "cryout",
+     "id": "cryout.JuE",
+     "song": "cryout",
+     "composer": "Ju_E",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "title": "Reimei",
+     "id": "Reimei.影虎",
+     "song": "Reimei",
+     "composer": "影虎。",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "title": "尊師 ～The Guru～",
+     "id": "尊師TheGuru.rider",
+     "song": "尊師 ～The Guru～",
+     "composer": "rider",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "title": "Spasmodic",
+     "id": "Spasmodic.姜米條颶風元力上人",
+     "song": "Spasmodic",
+     "composer": "姜米條☆颶風 ~ ♫元力上人♫",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "title": "Leave All Behind",
+     "id": "LeaveAllBehind.rider",
+     "song": "Leave All Behind",
+     "composer": "rider",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "chapter6",
+   "title": "Chapter 6 方舟蜃景",
+   "unlock": "sequential",
+   "chapter_gate": "",
+   "next_chapter_gate": "",
+   "notes": [],
+   "songs": [
+    {
+     "index": 1,
+     "title": "Colorful Days♪",
+     "id": "ColorfulDays.P4koofeatつゆり花鈴",
+     "song": "Colorful Days♪",
+     "composer": "P4koo feat. つゆり花鈴",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "title": "micro.wav",
+     "id": "microwav.dandeless",
+     "song": "micro.wav",
+     "composer": "dandeless",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "title": "重生",
+     "id": "重生.姜米條",
+     "song": "重生",
+     "composer": "姜米條",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "title": "NO ONE YES MAN",
+     "id": "NOONEYESMAN.MYUKKE",
+     "song": "NO ONE YES MAN",
+     "composer": "MYUKKE.",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "title": "望影の方舟Six",
+     "id": "望影の方舟Six.SeURa",
+     "song": "望影の方舟Six",
+     "composer": "Se-U-Ra",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "title": "Igallta",
+     "id": "Igallta.SeURa",
+     "song": "Igallta",
+     "composer": "Se-U-Ra",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "chapter7",
+   "title": "Chapter 7 时钟链接",
+   "unlock": "sequential",
+   "chapter_gate": "",
+   "next_chapter_gate": "",
+   "notes": [],
+   "songs": [
+    {
+     "index": 1,
+     "title": "Clock Paradox",
+     "id": "ClockParadox.WyvernP",
+     "song": "Clock Paradox",
+     "composer": "WyvernP",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "title": "Chronologika",
+     "id": "Chronologika.Hundotte",
+     "song": "Chronologika",
+     "composer": "Hundotte",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "title": "Nick of Time",
+     "id": "NickofTime.P4koo",
+     "song": "Nick of Time",
+     "composer": "P4koo",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "title": "Chronomia",
+     "id": "Chronomia.Lime",
+     "song": "Chronomia",
+     "composer": "Lime",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "title": "Chronos Collapse - La Campanella",
+     "id": "ChronosCollapseLaCampanella.SunsetRay",
+     "song": "Chronos Collapse - La Campanella",
+     "composer": "SunsetRay",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "title": "Rrhar'il",
+     "id": "Rrharil.TeamGrimoire",
+     "song": "Rrhar'il",
+     "composer": "Team Grimoire",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "chapter8",
+   "title": "Chapter 8 凌日潮汐",
+   "unlock": "sequential",
+   "chapter_gate": "",
+   "next_chapter_gate": "",
+   "notes": [],
+   "songs": [
+    {
+     "index": 1,
+     "title": "Crave Wave",
+     "id": "CraveWave.LandRoot",
+     "song": "Crave Wave",
+     "composer": "LandRoot",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "special",
+     "note": "C8CraveWaveUnlocked"
+    },
+    {
+     "index": 2,
+     "title": "The Chariot ~REVIIVAL~",
+     "id": "TheChariotREVIIVAL.Attoclef",
+     "song": "The Chariot ~REVIIVAL~",
+     "composer": "Attoclef",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "special",
+     "note": "C8TheChariotREVIIVALUnlocked"
+    },
+    {
+     "index": 3,
+     "title": "Luminescence",
+     "id": "Luminescence.米虾Fomiki初云CLoudie",
+     "song": "Luminescence",
+     "composer": "米虾Fomiki & 初云CLoudie",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "special",
+     "note": "C8LuminescenceUnlocked"
+    },
+    {
+     "index": 4,
+     "title": "Retribution",
+     "id": "Retribution.nmyKryexe",
+     "song": "Retribution",
+     "composer": "nm-y & Kry.exe",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "special",
+     "note": "C8RetributionUnlocked"
+    },
+    {
+     "index": 5,
+     "title": "DESTRUCTION 3,2,1",
+     "id": "DESTRUCTION321.Normal1zervsBrokenNerdz",
+     "song": "DESTRUCTION 3,2,1",
+     "composer": "Normal1zer vs. Broken Nerdz",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "special",
+     "note": "C8DESTRUCTION321Unlocked"
+    },
+    {
+     "index": 6,
+     "title": "Distorted Fate",
+     "id": "DistortedFate.Sakuzyo",
+     "song": "Distorted Fate",
+     "composer": "Sakuzyo",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "special",
+     "note": "C8DistortedFateUnlocked"
+    }
+   ]
+  },
+  {
+   "id": "chapter9",
+   "title": "Chapter 9（4.0.0 新章）",
+   "unlock": "special",
+   "chapter_gate": "Chapter9UnlockBegin",
+   "next_chapter_gate": "",
+   "notes": [],
+   "songs": [
+    {
+     "index": 1,
+     "title": "Exoplanetary Mirage",
+     "id": "ExoplanetaryMirage.かめりあ",
+     "song": "Exoplanetary Mirage",
+     "composer": "かめりあ",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "special",
+     "note": "C9ExoplanetaryMirageUnlocked"
+    },
+    {
+     "index": 2,
+     "title": "Entrance to the Chaos",
+     "id": "EntrancetotheChaos.打打だいずvssiromaru",
+     "song": "Entrance to the Chaos",
+     "composer": "打打だいず vs. siromaru",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "special",
+     "note": "C9EntranceToTheChaosUnlocked"
+    },
+    {
+     "index": 3,
+     "title": "About The Universe",
+     "id": "AboutTheUniverse.SOTUIMissionary",
+     "song": "About The Universe",
+     "composer": "SOTUI & Missionary",
+     "levels": [
+      "EZ",
+      "HD"
+     ],
+     "unlock": "special",
+     "note": "C9AboutTheUniverseUnlocked"
+    },
+    {
+     "index": 4,
+     "title": "Implexrough",
+     "id": "Implexrough.Silentroommommy",
+     "song": "Implexrough",
+     "composer": "Silentroom × mommy",
+     "levels": [
+      "EZ",
+      "HD"
+     ],
+     "unlock": "special",
+     "note": "C9ImplexroughUnlocked"
+    },
+    {
+     "index": 5,
+     "title": "Evanescent",
+     "id": "Evanescent.LeaF",
+     "song": "Evanescent",
+     "composer": "LeaF",
+     "levels": [
+      "EZ",
+      "HD"
+     ],
+     "unlock": "special",
+     "note": "C9EvanescentUnlocked"
+    }
+   ]
+  },
+  {
+   "id": "side_story_1",
+   "title": "Side Story 1 忘忧宫",
+   "unlock": "sequential",
+   "chapter_gate": "",
+   "next_chapter_gate": "",
+   "notes": [],
+   "songs": [
+    {
+     "index": 1,
+     "title": "Ποσειδών",
+     "id": "Poseidon.1112vsStar",
+     "song": "Ποσειδών",
+     "composer": "1112 vs. Star＊",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "title": "WATER",
+     "id": "WATER.A39沙包P",
+     "song": "WATER",
+     "composer": "A-39/沙包P",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "title": "Miracle Forest (VIP Mix)",
+     "id": "MiracleForestVIPMix.Rinthlive",
+     "song": "Miracle Forest (VIP Mix)",
+     "composer": "Rinth_live",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "title": "MOBILYS",
+     "id": "MOBILYS.Dachs",
+     "song": "MOBILYS",
+     "composer": "Dachs",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "title": "Lyrith -迷宮リリス-",
+     "id": "Lyrith迷宮リリス.ユメミド",
+     "song": "Lyrith -迷宮リリス-",
+     "composer": "ユメミド",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "side_story_2",
+   "title": "Side Story 2 弭刻日",
+   "unlock": "sequential",
+   "chapter_gate": "",
+   "next_chapter_gate": "",
+   "notes": [],
+   "songs": [
+    {
+     "index": 1,
+     "title": "Demiurge",
+     "id": "Demiurge.Rabpit",
+     "song": "Demiurge",
+     "composer": "Rabpit",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "title": "Demonkin",
+     "id": "Demonkin.ForgedReigns",
+     "song": "Demonkin",
+     "composer": "Forged Reigns",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "title": "Re_Nascence (Psystyle Ver.) ",
+     "id": "Re_NascencePsystyleVer.Rinth_live",
+     "song": "Re_Nascence (Psystyle Ver.) ",
+     "composer": "Rinth_live",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "title": "Ark",
+     "id": "Ark.kanoryo",
+     "song": "Ark",
+     "composer": "kanoryo",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "title": "After Dawn",
+     "id": "AfterDawn.S9ryne",
+     "song": "After Dawn",
+     "composer": "S9ryne",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "title": "INFiNiTE ENERZY -Overdoze-",
+     "id": "INFiNiTEENERZYOverdoze.RekuMochizuki",
+     "song": "INFiNiTE ENERZY -Overdoze-",
+     "composer": "Reku Mochizuki",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "side_story_3",
+   "title": "Side Story 3 盗乐行",
+   "unlock": "sequential",
+   "chapter_gate": "",
+   "next_chapter_gate": "",
+   "notes": [],
+   "songs": [
+    {
+     "index": 1,
+     "title": "Khalid",
+     "id": "Khalid.Dolphin",
+     "song": "Khalid",
+     "composer": "Dolphin",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "title": "Quantum Hyperspace",
+     "id": "QuantumHyperspace.D_AAN",
+     "song": "Quantum Hyperspace",
+     "composer": "D_AAN",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "title": "Freaky Undulations ~Noble Knights of Tune~",
+     "id": "FreakyUndulationsNobleKnightsofTune.JehezukielKURORAK",
+     "song": "Freaky Undulations ~Noble Knights of Tune~",
+     "composer": "Jehezukiel + KURORAK",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "title": "PANIC PARADISE",
+     "id": "PANICPARADISE.DJSHIONY",
+     "song": "PANIC PARADISE",
+     "composer": "DJ SHION.Y",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "title": "Re：End of a Dream",
+     "id": "ReEndofaDream.umavsモリモリあつし",
+     "song": "Re：End of a Dream",
+     "composer": "uma vs. モリモリあつし",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "side_story_4",
+   "title": "Side Story 4 无相乡",
+   "unlock": "sequential",
+   "chapter_gate": "",
+   "next_chapter_gate": "",
+   "notes": [],
+   "songs": [
+    {
+     "index": 1,
+     "title": "心の記憶",
+     "id": "心の記憶.A39沙包P",
+     "song": "心の記憶",
+     "composer": "A-39/沙包P",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "title": "Spotlight",
+     "id": "Spotlight.Ardolf",
+     "song": "Spotlight",
+     "composer": "Ardolf",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "title": "NightTheater",
+     "id": "NightTheater.わかどり",
+     "song": "NightTheater",
+     "composer": "わかどり",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "title": "Ramification",
+     "id": "Ramification.rareguyReina",
+     "song": "Ramification",
+     "composer": "rareguy & Reina",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "title": "Der Richter",
+     "id": "DerRichter.Ωμεγα",
+     "song": "Der Richter",
+     "composer": "Ωμεγα",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "title": "ATHAZA",
+     "id": "ATHAZA.LeaF",
+     "song": "ATHAZA",
+     "composer": "LeaF",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "ex_collection",
+   "title": "联动精选集（按名单顺序）",
+   "unlock": "sequential",
+   "chapter_gate": "",
+   "next_chapter_gate": "",
+   "notes": [
+    "具体曲包边界无法从存档确定，按名单原始顺序做顺序链。"
+   ],
+   "songs": [
+    {
+     "index": 1,
+     "title": "Doppelganger",
+     "id": "Doppelganger.LeaF",
+     "song": "Doppelganger",
+     "composer": "LeaF",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "title": "もぺもぺ",
+     "id": "もぺもぺ.LeaF",
+     "song": "もぺもぺ",
+     "composer": "LeaF",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "title": "MARENOL",
+     "id": "MARENOL.LeaF",
+     "song": "MARENOL",
+     "composer": "LeaF",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "title": "萤火虫の怨",
+     "id": "萤火虫の怨.闫东炜",
+     "song": "萤火虫の怨",
+     "composer": "闫东炜",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "title": "万吨匿名信",
+     "id": "万吨匿名信.闫东炜",
+     "song": "万吨匿名信",
+     "composer": "闫东炜",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "title": "风屿",
+     "id": "风屿.闫东炜",
+     "song": "风屿",
+     "composer": "闫东炜",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "title": "dB doll",
+     "id": "dBdoll.YUESTEVENuen",
+     "song": "dB doll",
+     "composer": "YUE.STEVEN/uen",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "title": "Dash",
+     "id": "Dash.小红Akane李祥辉",
+     "song": "Dash",
+     "composer": "小红Akane，李祥晖",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "title": "云女孩",
+     "id": "云女孩.符白牙SiYFics",
+     "song": "云女孩",
+     "composer": "符白牙/SiYFics",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "title": "Drop It",
+     "id": "DropIt.Asuka",
+     "song": "Drop It",
+     "composer": "Asuka",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 11,
+     "title": "RIPPER",
+     "id": "RIPPER.Friedwav",
+     "song": "RIPPER",
+     "composer": "Friedwav",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "title": "Aphasia",
+     "id": "Aphasia.闫东炜",
+     "song": "Aphasia",
+     "composer": "闫东炜",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 13,
+     "title": "开心病",
+     "id": "开心病.闫东炜",
+     "song": "开心病",
+     "composer": "闫东炜",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 14,
+     "title": "華灯爱",
+     "id": "華灯爱.闫东炜",
+     "song": "華灯爱",
+     "composer": "闫东炜",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 15,
+     "title": "Find_Me",
+     "id": "FindMe.Kforest",
+     "song": "Find_Me",
+     "composer": "K-forest",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 16,
+     "title": "Sein",
+     "id": "Sein.朔Apo11oprogramvsお月さま交響曲ftkuroa荒巻",
+     "song": "Sein",
+     "composer": "朔(Apo11o program vs. お月さま交響曲) ft. kuroa*×荒巻",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 17,
+     "title": "狂喜蘭舞",
+     "id": "狂喜蘭舞.LeaF",
+     "song": "狂喜蘭舞",
+     "composer": "LeaF",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 18,
+     "title": "Sparkle New Life",
+     "id": "SparkleNewLife.rider",
+     "song": "Sparkle New Life",
+     "composer": "rider",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 19,
+     "title": "Khronostasis Katharsis",
+     "id": "KhronostasisKatharsis.Halv",
+     "song": "Khronostasis Katharsis",
+     "composer": "Halv",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 20,
+     "title": "Snow Desert",
+     "id": "SnowDesert.WyvernP",
+     "song": "Snow Desert",
+     "composer": "WyvernP",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 21,
+     "title": "Burn",
+     "id": "Burn.NceS",
+     "song": "Burn",
+     "composer": "NceS",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 22,
+     "title": "Aleph-0",
+     "id": "Aleph0.LeaF",
+     "song": "Aleph-0",
+     "composer": "LeaF",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 23,
+     "title": "Next Time",
+     "id": "NextTime.SaMZIng",
+     "song": "Next Time",
+     "composer": "SaMZIng",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 24,
+     "title": "Rubbish Sorting",
+     "id": "RubbishSorting.CtymaxvsNceS",
+     "song": "Rubbish Sorting",
+     "composer": "Ctymax vs. NceS",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 25,
+     "title": "Another Me",
+     "id": "AnotherMe.NeutralMoon",
+     "song": "Another Me",
+     "composer": "Neutral Moon",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 26,
+     "title": "mechanted",
+     "id": "mechanted.rareguy",
+     "song": "mechanted",
+     "composer": "rareguy",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 27,
+     "title": "life flashes before weeb eyes",
+     "id": "lifeflashesbeforeweebeyes.BilliumMoto",
+     "song": "life flashes before weeb eyes",
+     "composer": "BilliumMoto",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 28,
+     "title": "Break Through The Barrier",
+     "id": "BreakThroughTheBarrier.lixound",
+     "song": "Break Through The Barrier",
+     "composer": "lixound",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 29,
+     "title": "Chronostasis",
+     "id": "Chronostasis.黒皇帝",
+     "song": "Chronostasis",
+     "composer": "黒皇帝",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 30,
+     "title": "Dead Soul",
+     "id": "DeadSoul.SoundSouler",
+     "song": "Dead Soul",
+     "composer": "Sound Souler",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 31,
+     "title": "Infinity Heaven",
+     "id": "InfinityHeaven.HyuN",
+     "song": "Infinity Heaven",
+     "composer": "HyuN",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 32,
+     "title": "Disorder",
+     "id": "Disorder.HyuNfeatYURI",
+     "song": "Disorder",
+     "composer": "HyuN feat. YURI",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 33,
+     "title": "CROSS†SOUL",
+     "id": "CROSSSOUL.HyuNfeatSyepias",
+     "song": "CROSS†SOUL",
+     "composer": "HyuN feat. Syepias",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 34,
+     "title": "Speed Up!",
+     "id": "SpeedUp.DarTokki",
+     "song": "Speed Up!",
+     "composer": "DarTokki",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 35,
+     "title": "Magenta Potion",
+     "id": "MagentaPotion.EmoCo",
+     "song": "Magenta Potion",
+     "composer": "EmoCo.",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 36,
+     "title": "Get Back",
+     "id": "GetBack.CAP3",
+     "song": "Get Back",
+     "composer": "CAP3",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 37,
+     "title": "Palescreen",
+     "id": "Palescreen.WyvernPfeatMadol",
+     "song": "Palescreen",
+     "composer": "WyvernP feat. Madol",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 38,
+     "title": "GOODTEK",
+     "id": "GOODTEK.EBIMAYO",
+     "song": "GOODTEK",
+     "composer": "EBIMAYO",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 39,
+     "title": "GOODBOUNCE",
+     "id": "GOODBOUNCE.EBIMAYO",
+     "song": "GOODBOUNCE",
+     "composer": "EBIMAYO",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 40,
+     "title": "GOODWORLD",
+     "id": "GOODWORLD.EBIMAYO",
+     "song": "GOODWORLD",
+     "composer": "EBIMAYO",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 41,
+     "title": "GOODFORTUNE",
+     "id": "GOODFORTUNE.EBIMAYO",
+     "song": "GOODFORTUNE",
+     "composer": "EBIMAYO",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 42,
+     "title": "GOODRAGE",
+     "id": "GOODRAGE.EBIMAYO",
+     "song": "GOODRAGE",
+     "composer": "EBIMAYO",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 43,
+     "title": "The Mountain Eater",
+     "id": "TheMountainEater.PaulBazooka",
+     "song": "The Mountain Eater",
+     "composer": "Paul Bazooka",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 44,
+     "title": "Orthodox",
+     "id": "Orthodox.tokiwa",
+     "song": "Orthodox",
+     "composer": "tokiwa",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 45,
+     "title": "End Me",
+     "id": "EndMe.ZxNXasDelaina",
+     "song": "End Me",
+     "composer": "ZxNX as \"Delaina\"",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 46,
+     "title": "Parallel Retrogression(Game Ver.)",
+     "id": "ParallelRetrogressionGameVer.Tetrajectory",
+     "song": "Parallel Retrogression(Game Ver.)",
+     "composer": "Tetrajectory",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 47,
+     "title": "Starduster",
+     "id": "Starduster.Quree",
+     "song": "Starduster",
+     "composer": "Quree",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 48,
+     "title": "Electron",
+     "id": "Electron.ElousFZ",
+     "song": "Electron",
+     "composer": "ElousΛ.-FZ",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 49,
+     "title": "SIGMA",
+     "id": "SIGMA.Kryexe",
+     "song": "SIGMA",
+     "composer": "Kry.exe",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 50,
+     "title": "Hardcore Kwaya",
+     "id": "HardcoreKwaya.EnFr",
+     "song": "Hardcore Kwaya",
+     "composer": "EnFr",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 51,
+     "title": "Äventyr",
+     "id": "Aventyr.GrandThawRigelTheatre",
+     "song": "Äventyr",
+     "composer": "Grand Thaw / Rigël Theatre",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 52,
+     "title": "Träne",
+     "id": "Trane.MALVA",
+     "song": "Träne",
+     "composer": "MALVA.",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 53,
+     "title": "雪降り、メリクリ",
+     "id": "雪降りメリクリ.A39",
+     "song": "雪降り、メリクリ",
+     "composer": "A-39",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 54,
+     "title": "Cervelle Connexion",
+     "id": "CervelleConnexion.SCTL",
+     "song": "Cervelle Connexion",
+     "composer": "SCTL",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 55,
+     "title": "modulus",
+     "id": "modulus.PTB10",
+     "song": "modulus",
+     "composer": "PTB10",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 56,
+     "title": "Wavetapper",
+     "id": "Wavetapper.Frums",
+     "song": "Wavetapper",
+     "composer": "Frums",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 57,
+     "title": "大和撫子 -Wild Dances-",
+     "id": "大和撫子WildDances.adapatorvsDRIVE",
+     "song": "大和撫子 -Wild Dances-",
+     "composer": "adaptor vs DRIVE.",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 58,
+     "title": "Eltaw",
+     "id": "Eltaw.Fl00t",
+     "song": "Eltaw",
+     "composer": "Fl00t",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 59,
+     "title": "Initialize",
+     "id": "Initialize.iF",
+     "song": "Initialize",
+     "composer": "iF",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 60,
+     "title": "桜樹街道",
+     "id": "桜樹街道.kozatosnow",
+     "song": "桜樹街道",
+     "composer": "kozato snow",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 61,
+     "title": "Get Ready!! ",
+     "id": "GetReady.iF",
+     "song": "Get Ready!! ",
+     "composer": "iF",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 62,
+     "title": "volcanic",
+     "id": "volcanic.DETROakaルゼ",
+     "song": "volcanic",
+     "composer": "DETRO a.k.a. ルゼ",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 63,
+     "title": "Better Graphic Animation",
+     "id": "BetterGraphicAnimation.ルゼ",
+     "song": "Better Graphic Animation",
+     "composer": "ルゼ",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 64,
+     "title": "XING",
+     "id": "XING.ginkiha",
+     "song": "XING",
+     "composer": "ginkiha",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 65,
+     "title": "Final Step!",
+     "id": "FinalStep.Lime",
+     "song": "Final Step!",
+     "composer": "Lime",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 66,
+     "title": "Cthugha",
+     "id": "Cthugha.USAO",
+     "song": "Cthugha",
+     "composer": "USAO",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 67,
+     "title": "With You",
+     "id": "WithYou.Cashew",
+     "song": "With You",
+     "composer": "Cashew",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 68,
+     "title": "Unorthodox Thoughts",
+     "id": "UnorthodoxThoughts.Joulez",
+     "song": "Unorthodox Thoughts",
+     "composer": "Joulez",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 69,
+     "title": "Apocalyptic",
+     "id": "Apocalyptic.ZClaxxSumaiLight",
+     "song": "Apocalyptic",
+     "composer": "Z ClaxX & SumaiLight",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 70,
+     "title": "游园地",
+     "id": "游园地.椒盐菠萝",
+     "song": "游园地",
+     "composer": "椒盐菠萝",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 71,
+     "title": "energy trixxx",
+     "id": "energytrixxx.KAH",
+     "song": "energy trixxx",
+     "composer": "KAH",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 72,
+     "title": "Nhelv",
+     "id": "Nhelv.Silentroom",
+     "song": "Nhelv",
+     "composer": "Silentroom",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 73,
+     "title": "-Arkhei-",
+     "id": "Arkhei.SeraAmagi",
+     "song": "-Arkhei-",
+     "composer": "Sera Amagi",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 74,
+     "title": "Kerberos",
+     "id": "Kerberos.Zris",
+     "song": "Kerberos",
+     "composer": "Zris",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 75,
+     "title": "ρars/ey",
+     "id": "parsey.siqlo",
+     "song": "ρars/ey",
+     "composer": "siqlo",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 76,
+     "title": "Concvssion",
+     "id": "Concvssion.Halv",
+     "song": "Concvssion",
+     "composer": "Halv",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 77,
+     "title": "ジングルベル(Jingle Bell)",
+     "id": "ジングルベルJingleBell.A39沙包P",
+     "song": "ジングルベル(Jingle Bell)",
+     "composer": "A-39/沙包P",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 78,
+     "title": "Time to Night Sky (feat. Lee Yu Jin)",
+     "id": "TimetoNightSkyfeatLeeYuJin.HyuNKLYDIX",
+     "song": "Time to Night Sky (feat. Lee Yu Jin)",
+     "composer": "HyuN & KLYDIX",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 79,
+     "title": "HAZARD",
+     "id": "HAZARD.Limpid",
+     "song": "HAZARD",
+     "composer": "Limpid",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 80,
+     "title": "Another Me",
+     "id": "AnotherMe.DAAN",
+     "song": "Another Me",
+     "composer": "D_AAN",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 81,
+     "title": "Don't Never Around",
+     "id": "DontNeverAround.HAMA",
+     "song": "Don't Never Around",
+     "composer": "HAMA",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 82,
+     "title": "RESSiSTANCE",
+     "id": "RESSiSTANCE.ぐるたみん",
+     "song": "RESSiSTANCE",
+     "composer": "ぐるたみん",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 83,
+     "title": "Dreamland",
+     "id": "Dreamland.z1onkyrrin",
+     "song": "Dreamland",
+     "composer": "z1on & kyrrin",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 84,
+     "title": "Another Round",
+     "id": "AnotherRound.JustinDai",
+     "song": "Another Round",
+     "composer": "Justin Dai",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 85,
+     "title": "996",
+     "id": "996.李化禹",
+     "song": "996",
+     "composer": "李化禹",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 86,
+     "title": "Future Mind",
+     "id": "FutureMind.RayNauticaRekuMochizuki",
+     "song": "Future Mind",
+     "composer": "Ray Nautica & Reku Mochizuki",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 87,
+     "title": "Luminescent",
+     "id": "Luminescent.Daison",
+     "song": "Luminescent",
+     "composer": "Daison",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 88,
+     "title": "FULi AUTO BUSTER",
+     "id": "FULiAUTOBUSTER.MYUKKE",
+     "song": "FULi AUTO BUSTER",
+     "composer": "MYUKKE.",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 89,
+     "title": "I Must Say No",
+     "id": "IMustSayNo.TangJuan",
+     "song": "I Must Say No",
+     "composer": "TangJuan",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 90,
+     "title": "opia",
+     "id": "opia.rN",
+     "song": "opia",
+     "composer": "rN",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 91,
+     "title": "Apocalypse",
+     "id": "Apocalypse.アリスシャッハと魔法の楽団",
+     "song": "Apocalypse",
+     "composer": "アリスシャッハと魔法の楽団",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 92,
+     "title": "Protoflicker",
+     "id": "Protoflicker.Silentroom",
+     "song": "Protoflicker",
+     "composer": "Silentroom",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 93,
+     "title": "Horizon Blue",
+     "id": "HorizonBlue.NothingButRequiemfeatAikapinChiyoko",
+     "song": "Horizon Blue",
+     "composer": "Nothing But Requiem feat. Aikapin & Chiyoko",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 94,
+     "title": "You are the Miserable",
+     "id": "YouaretheMiserable.tpazolite",
+     "song": "You are the Miserable",
+     "composer": "t+pazolite",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 95,
+     "title": "Stasis",
+     "id": "Stasis.Maozon",
+     "song": "Stasis",
+     "composer": "Maozon",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 96,
+     "title": "いざ、参ります",
+     "id": "いざ参ります.Uskefeat棗いつき",
+     "song": "いざ、参ります",
+     "composer": "U-ske feat. 棗いつき",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 97,
+     "title": "月下缭乱",
+     "id": "月下缭乱.月見静華vsLUNARiUM",
+     "song": "月下缭乱",
+     "composer": "月見静華 vs. LUNARiUM",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 98,
+     "title": "On And On!!",
+     "id": "OnAndOn.ETIAfeatJenga",
+     "song": "On And On!!",
+     "composer": "ETIA. feat. Jenga",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 99,
+     "title": "DataErr0r",
+     "id": "DataErr0r.Cosmograph",
+     "song": "DataErr0r",
+     "composer": "Cosmograph",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 100,
+     "title": "Shadow",
+     "id": "Shadow.SumaiLightvs姜米條",
+     "song": "Shadow",
+     "composer": "姜米條&SumaiLight",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 101,
+     "title": "心之所向",
+     "id": "心之所向.姜米條",
+     "song": "心之所向",
+     "composer": "姜米條",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 102,
+     "title": "inferior",
+     "id": "inferior.姜米條",
+     "song": "inferior",
+     "composer": "姜米條",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 103,
+     "title": "c.s.q.n.",
+     "id": "csqn.Aoi",
+     "song": "c.s.q.n.",
+     "composer": "Aoi",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 104,
+     "title": "Brave Notes",
+     "id": "BraveNotes.TurquoiseDRIVENota",
+     "song": "Brave Notes",
+     "composer": "Turquoise(DRIVE.+Nota)",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 105,
+     "title": "盏茗",
+     "id": "盏茗.茶鸣拾贰律",
+     "song": "盏茗",
+     "composer": "茶鸣拾贰律",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 106,
+     "title": "青芽",
+     "id": "青芽.茶鸣拾贰律",
+     "song": "青芽",
+     "composer": "茶鸣拾贰律",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 107,
+     "title": "Eternal Snow",
+     "id": "EternalSnow.AbyssIdols",
+     "song": "Eternal Snow",
+     "composer": "Abyss Idols",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 108,
+     "title": "Rainy Season",
+     "id": "RainySeason.AbyssIdols",
+     "song": "Rainy Season",
+     "composer": "Abyss Idols",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 109,
+     "title": "El Condor Pasa (Phigros Edit)",
+     "id": "ElCondorPasaPhigrosEdit.PlasticFruits",
+     "song": "El Condor Pasa (Phigros Edit)",
+     "composer": "Plastic Fruits",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 110,
+     "title": "Break Over",
+     "id": "BreakOver.Kforest",
+     "song": "Break Over",
+     "composer": "K-forest",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 111,
+     "title": "Believe Light (feat. 果丸哒呦)",
+     "id": "BelieveLightfeat果丸哒呦.ScalerMestie果丸哒呦",
+     "song": "Believe Light (feat. 果丸哒呦)",
+     "composer": "Scaler & Mestie & 果丸哒呦",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 112,
+     "title": "Pont des souvenirs",
+     "id": "Pontdessouvenirs.VeetaCrushvsitsufeatitsu",
+     "song": "Pont des souvenirs",
+     "composer": "VeetaCrush vs. [itsu(feat.itsu)]",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 113,
+     "title": "青丘",
+     "id": "青丘.BLACK0",
+     "song": "青丘",
+     "composer": "BLACK 0",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 114,
+     "title": "瓷岁",
+     "id": "瓷岁.茶鸣拾贰律",
+     "song": "瓷岁",
+     "composer": "茶鸣拾贰律",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 115,
+     "title": "Feast远东之宴",
+     "id": "Feast远东之宴.茶鸣拾贰律",
+     "song": "Feast远东之宴",
+     "composer": "茶鸣拾贰律",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 116,
+     "title": "インフェルノシティ",
+     "id": "インフェルノシティ.Ponchifeatはぁち",
+     "song": "インフェルノシティ",
+     "composer": "Ponchi♪ feat. はぁち",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 117,
+     "title": "Upshift",
+     "id": "Upshift.Iriss-Frantzz",
+     "song": "Upshift",
+     "composer": "Iriss-Frantzz",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 118,
+     "title": "Poison AND÷OR Affection",
+     "id": "PoisonANDORAffection.LeaF",
+     "song": "Poison AND÷OR Affection",
+     "composer": "LeaF",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 119,
+     "title": "Random",
+     "id": "Random.SobremSilentroom",
+     "song": "Random",
+     "composer": "Sobrem × Silentroom",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 120,
+     "title": "零號車輛",
+     "id": "零號車輛.seatrus",
+     "song": "零號車輛",
+     "composer": "seatrus",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 121,
+     "title": "Now Is The Time, Do It",
+     "id": "NowIsTheTimeDoIt.RoyMikelate",
+     "song": "Now Is The Time, Do It",
+     "composer": "Roy Mikelate",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 122,
+     "title": "Bougainvillea",
+     "id": "Bougainvillea.Jade",
+     "song": "Bougainvillea",
+     "composer": "Jade",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 123,
+     "title": "神話",
+     "id": "神話.PicaM2U",
+     "song": "神話",
+     "composer": "Pica & M2U",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 124,
+     "title": "El último baile",
+     "id": "Elúltimobaile.Θ",
+     "song": "El último baile",
+     "composer": "Θ",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 125,
+     "title": "Trojan",
+     "id": "Trojan.litmus",
+     "song": "Trojan",
+     "composer": "litmus*",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 126,
+     "title": "Temporal Shifting",
+     "id": "TemporalShifting.LureRabbitVC",
+     "song": "Temporal Shifting",
+     "composer": "Lure Rabbit & V!C",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 127,
+     "title": "Ad astra per aspera",
+     "id": "Adastraperaspera.RabbitHouse",
+     "song": "Ad astra per aspera",
+     "composer": "Rabbit House",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 128,
+     "title": "A journey to the moonlight",
+     "id": "Ajourneytothemoonlight.Yesod",
+     "song": "A journey to the moonlight",
+     "composer": "Yesod",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 129,
+     "title": "Rainy Heart",
+     "id": "RainyHeart.BelieverInYou阿卡姆巫师",
+     "song": "Rainy Heart",
+     "composer": "BelieverInYou(阿卡姆巫师)",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 130,
+     "title": "Realms",
+     "id": "Realms.HinkikAHimitsu",
+     "song": "Realms",
+     "composer": "Hinkik & A Himitsu",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 131,
+     "title": "ぱぴぷぴぷぴぱ",
+     "id": "ぱぴぷぴぷぴぱ.ころねぽちWith立秋",
+     "song": "ぱぴぷぴぷぴぱ",
+     "composer": "ころねぽち With 立秋",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 132,
+     "title": "Triumph & Regret",
+     "id": "TriumphRegret.typeMARS",
+     "song": "Triumph & Regret",
+     "composer": "typeMARS",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 133,
+     "title": "S.A.T.E.L.L.I.T.E.",
+     "id": "SATELLITE.かめりあ",
+     "song": "S.A.T.E.L.L.I.T.E.",
+     "composer": "かめりあ",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 134,
+     "title": "Dance with Silence",
+     "id": "DancewithSilence.かめりあ",
+     "song": "Dance with Silence",
+     "composer": "かめりあ",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 135,
+     "title": "Labyrinth in Kowloon: Walled World",
+     "id": "LabyrinthinKowloonWalledWorld.かめりあ",
+     "song": "Labyrinth in Kowloon: Walled World",
+     "composer": "かめりあ",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 136,
+     "title": "Compute It With Some Devilish Alcoholic Steampunk Engines",
+     "id": "ComputeItWithSomeDevilishAlcoholicSteampunkEngines.かめりあ",
+     "song": "Compute It With Some Devilish Alcoholic Steampunk Engines",
+     "composer": "かめりあ",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 137,
+     "title": "+ERABY+E CONNEC+10N",
+     "id": "ERABYECONNEC10N.かめりあ",
+     "song": "+ERABY+E CONNEC+10N",
+     "composer": "かめりあ",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 138,
+     "title": "Diamond Eyes",
+     "id": "DiamondEyes.SYNTHETIC",
+     "song": "Diamond Eyes",
+     "composer": "SYNTHETIC",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 139,
+     "title": "Bitterblossom",
+     "id": "Bitterblossom.imvi",
+     "song": "Bitterblossom",
+     "composer": "imvi",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 140,
+     "title": "Silence is Golden, Speech is Golden",
+     "id": "SilenceisGoldenSpeechisGolden.NIWASHI",
+     "song": "Silence is Golden, Speech is Golden",
+     "composer": "NIWASHI",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 141,
+     "title": "Fractured Angel",
+     "id": "FracturedAngel.DJRaisei",
+     "song": "Fractured Angel",
+     "composer": "DJ Raisei",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 142,
+     "title": "Journey with You",
+     "id": "JourneywithYou.Iris",
+     "song": "Journey with You",
+     "composer": "Iris",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 143,
+     "title": "Secret Illumination",
+     "id": "SecretIllumination.Yooh",
+     "song": "Secret Illumination",
+     "composer": "Yooh",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 144,
+     "title": "Inverted World",
+     "id": "InvertedWorld.ARForest",
+     "song": "Inverted World",
+     "composer": "ARForest",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 145,
+     "title": "月詠に鳴る",
+     "id": "月詠に鳴る.Feryquitousfeat藍月なくる",
+     "song": "月詠に鳴る",
+     "composer": "Feryquitous feat.藍月なくる",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 146,
+     "title": "TECHNOPOLIS 2085",
+     "id": "TECHNOPOLIS2085.PRASTIKDANCEFLOOR",
+     "song": "TECHNOPOLIS 2085",
+     "composer": "PRASTIK DANCEFLOOR",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 147,
+     "title": "祈 -我ら神祖と共に歩む者なり-",
+     "id": "祈-我ら神祖と共に歩む者なり-.光吉猛修VS穴山大輔VSKaiVS水野健治VS大国奏音",
+     "song": "祈 -我ら神祖と共に歩む者なり-",
+     "composer": "光吉猛修 VS 穴山大輔 VS Kai VS 水野健治 VS 大国奏音",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 148,
+     "title": "bye",
+     "id": "bye.DingerBox",
+     "song": "bye",
+     "composer": "DingerBox",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 149,
+     "title": "聖夜讃歌",
+     "id": "聖夜讃歌.A39沙包P",
+     "song": "聖夜讃歌",
+     "composer": "A-39/沙包P",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 150,
+     "title": "ストレイソウル・アラウンド",
+     "id": "ストレイソウルアラウンド.みーに",
+     "song": "ストレイソウル・アラウンド",
+     "composer": "みーに",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 151,
+     "title": "Manifold Hypothesis",
+     "id": "ManifoldHypothesis.cybermisofeattigerlily",
+     "song": "Manifold Hypothesis",
+     "composer": "cybermiso feat. tigerlily",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 152,
+     "title": "K.Moe (VIP)",
+     "id": "KMoeVIP.ZxNX",
+     "song": "K.Moe (VIP)",
+     "composer": "ZxNX",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 153,
+     "title": "G.V.N. (Glitter,Vomitus and Neon)",
+     "id": "GVNGlitterVomitusandNeon.SaltySaltUnfold33",
+     "song": "G.V.N. (Glitter,Vomitus and Neon)",
+     "composer": "Salty Salt & Unfold33",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 154,
+     "title": "Crush BETA",
+     "id": "CrushBETA.shadow_bling",
+     "song": "Crush BETA",
+     "composer": "shadow_bling",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 155,
+     "title": "Broken Sky",
+     "id": "BrokenSky.JungoMAX3feat刘佳宜Snow幻影刃shadow",
+     "song": "Broken Sky",
+     "composer": "Jungo & MAX 3 feat. 刘佳宜Snow & 幻影刃shadow",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 156,
+     "title": "BRAIN HACKER",
+     "id": "BRAINHACKER.SOMON",
+     "song": "BRAIN HACKER",
+     "composer": "SOMON",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 157,
+     "title": "Xenolith",
+     "id": "Xenolith.Tatsh",
+     "song": "Xenolith",
+     "composer": "Tatsh",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 158,
+     "title": "Artificial Existence",
+     "id": "ArtificialExistence.JunKuroda",
+     "song": "Artificial Existence",
+     "composer": "Jun Kuroda",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 159,
+     "title": "Indelible Scar",
+     "id": "IndelibleScar.Noah",
+     "song": "Indelible Scar",
+     "composer": "Noah",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 160,
+     "title": "Antithese",
+     "id": "Antithese.Blacklolita",
+     "song": "Antithese",
+     "composer": "Blacklolita",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 161,
+     "title": "PRAGMATISM -RESURRECTION-",
+     "id": "PRAGMATISMRESURRECTION.Laur",
+     "song": "PRAGMATISM -RESURRECTION-",
+     "composer": "Laur",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 162,
+     "title": "Shine After",
+     "id": "ShineAfter.ADeanJocularACE",
+     "song": "Shine After",
+     "composer": "ADean & JocularACE",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 163,
+     "title": "Bloom",
+     "id": "Bloom.targ麻团qwq",
+     "song": "Bloom",
+     "composer": "targ & 麻团qwq",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 164,
+     "title": "幽世桔梗",
+     "id": "幽世桔梗.Capchiifeatまるもこ",
+     "song": "幽世桔梗",
+     "composer": "Capchii feat. まるもこ",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 165,
+     "title": "千紫万紅",
+     "id": "千紫万紅.r0yvsWABI",
+     "song": "千紫万紅",
+     "composer": "r0y vs. WABI",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 166,
+     "title": "明鏡烈火",
+     "id": "明鏡烈火.MUEvsRekuMochizuki",
+     "song": "明鏡烈火",
+     "composer": "M-UE vs. Reku Mochizuki",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 167,
+     "title": "今天不是明天",
+     "id": "今天不是明天.PIKASONICfeat兰音Reine",
+     "song": "今天不是明天",
+     "composer": "PIKASONIC feat. 兰音Reine",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 168,
+     "title": "Cuvism³",
+     "id": "Cuvism.Fl00tvsHalv",
+     "song": "Cuvism³",
+     "composer": "Fl00t vs Halv",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 169,
+     "title": "iL-Artifact",
+     "id": "iLArtifact.Link0",
+     "song": "iL-Artifact",
+     "composer": "Link''0",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 170,
+     "title": "a truth seeker -Communication with Utopia will be lost-",
+     "id": "atruthseekerCommunicationwithUtopiawillbelost.kuro",
+     "song": "a truth seeker -Communication with Utopia will be lost-",
+     "composer": "kuro",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 171,
+     "title": "Bounded Quietude",
+     "id": "BoundedQuietude.FiniteLimitvsSiLiS",
+     "song": "Bounded Quietude",
+     "composer": "Finite Limit vs SiLiS",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 172,
+     "title": "君往何处 (Quo Vadis)",
+     "id": "君往何处QuoVadis.M2U",
+     "song": "君往何处 (Quo Vadis)",
+     "composer": "M2U",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 173,
+     "title": "暗夜苏醒 (REANIMATE)",
+     "id": "暗夜苏醒REANIMATE.Warak",
+     "song": "暗夜苏醒 (REANIMATE)",
+     "composer": "Warak",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 174,
+     "title": "Grimheart",
+     "id": "Grimheart.Puru",
+     "song": "Grimheart",
+     "composer": "Puru",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 175,
+     "title": "Thrash force",
+     "id": "Thrashforce.KAHvsE0ri4",
+     "song": "Thrash force",
+     "composer": "KAH vs. E0ri4",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 176,
+     "title": "Originally",
+     "id": "Originally.SNKSMizku",
+     "song": "Originally",
+     "composer": "SNKS & Mizku",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 177,
+     "title": "黄金之城 (GOLD TOWN)",
+     "id": "黄金之城GOLDTOWN.Memme",
+     "song": "黄金之城 (GOLD TOWN)",
+     "composer": "MEMME",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 178,
+     "title": "双重间谍 (Double Agent)",
+     "id": "双重间谍DoubleAgent.WAVAV",
+     "song": "双重间谍 (Double Agent)",
+     "composer": "Wav.AV",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 179,
+     "title": "幻影鬼魅 (PLEASE)",
+     "id": "幻影鬼魅PLEASE.R300K",
+     "song": "幻影鬼魅 (PLEASE)",
+     "composer": "R300K",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 180,
+     "title": "Schadenfreude",
+     "id": "Schadenfreude.ZxNX",
+     "song": "Schadenfreude",
+     "composer": "ZxNX",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 181,
+     "title": "Le temps perdu",
+     "id": "Letempsperdu.Daison",
+     "song": "Le temps perdu",
+     "composer": "Daison",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 182,
+     "title": "Fixations Toward the Stars",
+     "id": "FixationsTowardtheStars.Foodbot",
+     "song": "Fixations Toward the Stars",
+     "composer": "Foodbot",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 183,
+     "title": "valor/starcross",
+     "id": "valorstarcross.LundyvsWyvren",
+     "song": "valor/starcross",
+     "composer": "Lundy vs. Wyvren",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 184,
+     "title": "Comet",
+     "id": "CometFeat符白牙.CNHKSS",
+     "song": "Comet",
+     "composer": "CNHKSS feat. 符白牙",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 185,
+     "title": "白と黒のバケモノ",
+     "id": "白と黒のバケモノ.テヅカ",
+     "song": "白と黒のバケモノ",
+     "composer": "テヅカ",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 186,
+     "title": "Devotion",
+     "id": "Devotion.Connexio",
+     "song": "Devotion",
+     "composer": "Connexio",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 187,
+     "title": "Kirakira Noel Story!!",
+     "id": "KirakiraNoelStory.RekuMochizuki",
+     "song": "Kirakira Noel Story!!",
+     "composer": "Reku Mochizuki",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 188,
+     "title": "Shelter",
+     "id": "Shelter.MeatyRabbitNceS",
+     "song": "Shelter",
+     "composer": "MeatyRabbit & NceS",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 189,
+     "title": "蝎虎天体 -Lacertid-",
+     "id": "蝎虎天体Lacertid.CreamvsDaily天利",
+     "song": "蝎虎天体 -Lacertid-",
+     "composer": "Cream vs. Daily天利",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 190,
+     "title": "贝多芬祝福 (Beethoven Blessing)",
+     "id": "贝多芬祝福BeethovenBlessing.Nauts",
+     "song": "贝多芬祝福 (Beethoven Blessing)",
+     "composer": "Nauts",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 191,
+     "title": "インマイマインド",
+     "id": "インマイマインド.レシオP",
+     "song": "インマイマインド",
+     "composer": "レシオP",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 192,
+     "title": "ニライカナイ (NiraicA_nai Mix)",
+     "id": "ニライカナイNiraicA_naiMix.roopfromSTR",
+     "song": "ニライカナイ (NiraicA_nai Mix)",
+     "composer": "roop from STR",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 193,
+     "title": "Swing Skip Drop",
+     "id": "SwingSkipDrop.ミハイル",
+     "song": "Swing Skip Drop",
+     "composer": "ミハイル",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 194,
+     "title": "宇宙残骸少女 (Cosmic Dusty Girl)",
+     "id": "宇宙残骸少女CosmicDustyGirl.辻原一郎",
+     "song": "宇宙残骸少女 (Cosmic Dusty Girl)",
+     "composer": "辻原一郎",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 195,
+     "title": "Resolver",
+     "id": "Resolver.Gomadare",
+     "song": "Resolver",
+     "composer": "Gomadare",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 196,
+     "title": "Luminous Entities Lost Heart",
+     "id": "LuminousEntitiesLostHeart.NormalMfeatUsagiDenki",
+     "song": "Luminous Entities Lost Heart",
+     "composer": "NormalM feat. Usagi Denki",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 197,
+     "title": "KIZUNA Resolution",
+     "id": "KIZUNAResolution.TAG",
+     "song": "KIZUNA Resolution",
+     "composer": "TAG",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 198,
+     "title": "AbsoluTe disoRdeR",
+     "id": "AbsoluTedisoRdeR.AcuteDisarray",
+     "song": "AbsoluTe disoRdeR",
+     "composer": "Acute Disarray",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 199,
+     "title": "Aphrodite's Child (short ver.)",
+     "id": "AphroditesChildshortver.RUQOA",
+     "song": "Aphrodite's Child (short ver.)",
+     "composer": "RUQOA",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 200,
+     "title": "DevIAtiOn (short ver.)",
+     "id": "DevIAtiOnshortver.polysha",
+     "song": "DevIAtiOn (short ver.)",
+     "composer": "polysha",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 201,
+     "title": "NO x",
+     "id": "NOx.Juggernaut",
+     "song": "NO x",
+     "composer": "Juggernaut.",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 202,
+     "title": "Alice in a xxxxxxxx",
+     "id": "Aliceinaxxxxxxxx.Nagiha",
+     "song": "Alice in a xxxxxxxx",
+     "composer": "Nagiha",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 203,
+     "title": "Radiance",
+     "id": "Radiance.Nhato",
+     "song": "Radiance",
+     "composer": "Nhato",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 204,
+     "title": "Diamond Dust",
+     "id": "DiamondDust.MasahiroGodspeedAoki",
+     "song": "Diamond Dust",
+     "composer": "Masahiro “Godspeed” Aoki",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 205,
+     "title": "Stardust:RAY",
+     "id": "StardustRAY.kanonevsBlackY",
+     "song": "Stardust:RAY",
+     "composer": "kanone vs. BlackY",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 206,
+     "title": "Frozen Heart",
+     "id": "FrozenHeart.A39沙包P",
+     "song": "Frozen Heart",
+     "composer": "A-39 / 沙包P",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 207,
+     "title": "Helios",
+     "id": "Helios.NOABotaNya",
+     "song": "Helios",
+     "composer": "NOA(Cortrix) & BotaNya",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 208,
+     "title": "Flutter Echo",
+     "id": "FlutterEcho.Cansol",
+     "song": "Flutter Echo",
+     "composer": "Cansol",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 209,
+     "title": "Re：birth",
+     "id": "Rebirth.ああああ",
+     "song": "Re：birth",
+     "composer": "ああああ",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 210,
+     "title": "Avataar ~Reincarnation of Kalpa~",
+     "id": "AvataarReincarnationofKalpa.ScarletteakaCrYmson",
+     "song": "Avataar ~Reincarnation of Kalpa~",
+     "composer": "Scarlette a.k.a CrYmson",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 211,
+     "title": "雪降り ~雪が降っている~",
+     "id": "雪降り雪が降っている.AiSSw夜輪ft結月ゆかり",
+     "song": "雪降り ~雪が降っている~",
+     "composer": "AiSS w/ 夜輪 ft. 結月ゆかり",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 212,
+     "title": "Retribution ~ Cycle of Redemption ~ ",
+     "id": "RetributionCycleofRedemption.ArdolfvsDaily天利",
+     "song": "Retribution ~ Cycle of Redemption ~ ",
+     "composer": "Ardolf vs. Daily天利",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 213,
+     "title": "アンビバレンス",
+     "id": "アンビバレンス.すりぃ相沢",
+     "song": "アンビバレンス",
+     "composer": "すりぃ×相沢",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 214,
+     "title": "Komplexe",
+     "id": "Komplexe.雄之助featSennzai",
+     "song": "Komplexe",
+     "composer": "雄之助 feat. Sennzai",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 215,
+     "title": "sølips",
+     "id": "slips.rintarosoma",
+     "song": "sølips",
+     "composer": "rintaro soma",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 216,
+     "title": "QZKago Requiem",
+     "id": "QZKagoRequiem.tpazolite",
+     "song": "QZKago Requiem",
+     "composer": "t+pazolite",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 217,
+     "title": "So laggy! (feat. Uzumaki)",
+     "id": "SolaggyfeatUzumaki.ShrimpCatsはぁち後藤涼輔",
+     "song": "So laggy! (feat. Uzumaki)",
+     "composer": "ShrimpCats. (はぁち×後藤涼輔)",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 218,
+     "title": "000 -Ain Soph Aur-",
+     "id": "000AinSophAur.Yumeji",
+     "song": "000 -Ain Soph Aur-",
+     "composer": "Yumeji",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 219,
+     "title": "Xep+ion",
+     "id": "Xepion.Acotto",
+     "song": "Xep+ion",
+     "composer": "Acotto",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 220,
+     "title": "Archidoxen",
+     "id": "Archidoxen.Se_IRA",
+     "song": "Archidoxen",
+     "composer": "Se_IRA",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 221,
+     "title": "百鬼֎夜行",
+     "id": "百鬼夜行.SaladSavior",
+     "song": "百鬼֎夜行",
+     "composer": "Salad Savior",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 222,
+     "title": "BANGING STRIKE",
+     "id": "BANGINGSTRIKE.DewPleiades",
+     "song": "BANGING STRIKE",
+     "composer": "Dew Pleiades",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 223,
+     "title": "The Whole Rest",
+     "id": "TheWholeRest.KIVΛ",
+     "song": "The Whole Rest",
+     "composer": "KIVΛ",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 224,
+     "title": "Cristalisia",
+     "id": "Cristalisia.onoken",
+     "song": "Cristalisia",
+     "composer": "onoken",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 225,
+     "title": "Hydra",
+     "id": "Hydra.JamesLandinoXAkiraComplex",
+     "song": "Hydra",
+     "composer": "James Landino X Akira Complex",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 226,
+     "title": "最高傑作",
+     "id": "最高傑作.PYKAMIA",
+     "song": "最高傑作",
+     "composer": "PYKAMIA",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 227,
+     "title": "Locomotive",
+     "id": "Locomotive.K",
+     "song": "Locomotive",
+     "composer": "♠K",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 228,
+     "title": "Alb",
+     "id": "Alb.Avans",
+     "song": "Alb",
+     "composer": "Avans",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 229,
+     "title": "Incyde",
+     "id": "Incyde.YbeLL",
+     "song": "Incyde",
+     "composer": "YbeLL",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 230,
+     "title": "彩",
+     "id": "彩.MisoilePunch",
+     "song": "彩",
+     "composer": "MisoilePunch♪",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 231,
+     "title": "彼方へ、名もなき海辺より",
+     "id": "彼方へ名もなき海辺より.打打だいず&月乃",
+     "song": "彼方へ、名もなき海辺より",
+     "composer": "打打だいず&月乃",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 232,
+     "title": "ABYSS MOTION 192.333",
+     "id": "ABYSSMOTION192333.ariiolTSAR奏Sou",
+     "song": "ABYSS MOTION 192.333",
+     "composer": "ariiol & 奏Sou",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 233,
+     "title": "Xenophobia",
+     "id": "Xenophobia.XinG",
+     "song": "Xenophobia",
+     "composer": "XinG",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 234,
+     "title": "Verrückt",
+     "id": "Verruckt.Raimukun",
+     "song": "Verrückt",
+     "composer": "Raimukun",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 235,
+     "title": "After ZABANIYA (MUG Edit)",
+     "id": "AfterZABANIYAMUGEdit.Daily天利",
+     "song": "After ZABANIYA (MUG Edit)",
+     "composer": "Daily天利",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 236,
+     "title": "下一秒",
+     "id": "下一秒.BobHouSherlock卓智媛feat兰音Reine",
+     "song": "下一秒",
+     "composer": "Bob Hou & Sherlock卓智媛 feat. 兰音Reine",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 237,
+     "title": "玩具狂奏曲 -終焉-",
+     "id": "玩具狂奏曲終焉.きくお",
+     "song": "玩具狂奏曲 -終焉-",
+     "composer": "きくお",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN",
+      "AT"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 238,
+     "title": "Snow Dance",
+     "id": "SnowDance.悠叶いのり",
+     "song": "Snow Dance",
+     "composer": "悠叶いのり",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 239,
+     "title": "亂★舞",
+     "id": "亂舞.NekockLK",
+     "song": "亂★舞",
+     "composer": "Nekock·LK",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 240,
+     "title": "Cleyera",
+     "id": "Cleyera.Riya",
+     "song": "Cleyera",
+     "composer": "Riya",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 241,
+     "title": "70 Minutes Fighters",
+     "id": "70MinutesFighters.かたぎり",
+     "song": "70 Minutes Fighters",
+     "composer": "かたぎり",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "new_songs",
+   "title": "新增曲目（4.0.0 及近期更新）",
+   "unlock": "sequential",
+   "chapter_gate": "",
+   "next_chapter_gate": "",
+   "notes": [
+    "名单中较新加入的曲目，章节归属未确认。"
+   ],
+   "songs": [
+    {
+     "index": 1,
+     "title": "Der Schneid",
+     "id": "DerSchneid.Ωμεγα",
+     "song": "Der Schneid",
+     "composer": "Ωμεγα",
+     "levels": [
+      "EZ",
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "title": "Gungnir Fracture",
+     "id": "GungnirFracture.Kryexe",
+     "song": "Gungnir Fracture",
+     "composer": "Kry.exe",
+     "levels": [
+      "HD"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "title": "夢の降る日に",
+     "id": "夢の降る日に.seatrus",
+     "song": "夢の降る日に",
+     "composer": "seatrus",
+     "levels": [
+      "HD",
+      "IN"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "title": "星拂云锦 feat.koi",
+     "id": "星拂云锦featkoi.S9ryne",
+     "song": "星拂云锦 feat.koi",
+     "composer": "S9ryne",
+     "levels": [
+      "EZ",
+      "HD"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "title": "Cryogenic",
+     "id": "Cryogenic.Camelli aftPetraGurin",
+     "song": "Cryogenic",
+     "composer": "Camellia ft. Petra Gurin",
+     "levels": [
+      "EZ",
+      "HD"
+     ],
+     "unlock": "sequential",
+     "note": ""
+    }
+   ]
+  }
+ ],
+ "special_songs": [
+  {
+   "title": "Spasmodic",
+   "chapter": "Chapter 5",
+   "trigger": [
+    "方法 A：尊師 ~The Guru~ 或 Reimei 对应难度取得 A 及以上且 Miss+Bad≤6；",
+    "方法 B：尊師 ~The Guru~ 对应难度取得 A 及以上，再将 Chapter 5 默认排序前三首（NYA!!!、JunXion Between Life And Death、cryout）中任意一首 Full Combo。"
+   ],
+   "constraints": [
+    "必须在触发难度内完成，EZ/HD 触发只解锁该曲 EZ/HD；IN 触发才解锁 EZ/HD/IN。",
+    "结算评级不得为 F，否则触发失败；触发后退出结算界面的行为在部分版本会中断流程。",
+    "IN 与 AT 不受『上一曲 IN 880000 解锁下一曲 IN』规则影响。"
+   ],
+   "difficulty_unlock_after": "AT 需 IN 达到 920000（S）"
+  },
+  {
+   "title": "Leave All Behind",
+   "chapter": "Chapter 5",
+   "trigger": [
+    "Spasmodic 任意难度取得 A 及以上（880000）后解锁。"
+   ],
+   "constraints": [
+    "同时是 Chapter 6 的章节门槛曲。"
+   ],
+   "difficulty_unlock_after": "IN 需 HD 920000；AT 需 IN 920000"
+  },
+  {
+   "title": "Igallta",
+   "chapter": "Chapter 6",
+   "trigger": [
+    "将重生同一难度整曲不击打任何 Note，结算得到 0000000 与假 φ；",
+    "在同一难度进入望影の方舟Six，漏掉全部『冒牌 Note』并取得 A 及以上（880000）。"
+   ],
+   "constraints": [
+    "假 Note 速度明显慢于正常 Note，文档化位置：EZ 214；HD 185/398；IN 218/495/629。",
+    "必须使用与重生相同的难度完成整套流程；切换难度会使异象判定失效。",
+    "EZ/HD 触发只解锁 EZ/HD；IN 触发才连带解锁 IN。",
+    "进入 Igallta 后需至少达到 C（720000）以上，否则解锁失败并需重做异象。"
+   ],
+   "difficulty_unlock_after": "AT 需 IN 达到 920000（S）"
+  },
+  {
+   "title": "Rrhar'il",
+   "chapter": "Chapter 7",
+   "trigger": [
+    "Chronos Collapse -La Campanella- 对应难度取得 A 及以上；",
+    "Clock Paradox 对应难度在两次时钟异象之间保持连击不中断（不得 Bad/Miss）；",
+    "进入 Chronostasis 并取得 880000 以上；",
+    "进入旧版 Glaciaxion 并取得 960000 以上（V 评级）；",
+    "完成触发动画后进入 Rrhar'il。"
+   ],
+   "constraints": [
+    "第二次时钟异象后 Reset 键会被锁定，意味着此段不能重开。",
+    "必须使用同一难度完成整套流程。",
+    "EZ/HD 触发只解锁 EZ/HD；IN 触发才连带解锁 IN。"
+   ],
+   "difficulty_unlock_after": "AT 需 IN 达到 920000（S）"
+  },
+  {
+   "title": "Crave Wave",
+   "chapter": "Chapter 8",
+   "trigger": [
+    "解锁 Chapter 8 后，在 Chapter 6 选择 micro.wav 对应难度并点击开始，自动跳转。"
+   ],
+   "constraints": [
+    "需达到 S（920000）以上解锁本曲；IN/AT 后续按全局规则处理。"
+   ],
+   "difficulty_unlock_after": "IN 需 HD 920000；AT 需 IN 920000"
+  },
+  {
+   "title": "The Chariot ~REVIIVAL~",
+   "chapter": "Chapter 8",
+   "trigger": [
+    "解锁 Crave Wave 后，在 Legacy 选择 Cereris 对应难度并点击开始，自动跳转。"
+   ],
+   "constraints": [
+    "需达到 S（920000）以上解锁本曲；曲绘为倒置状态，是 Luminescence 的触发入口。"
+   ],
+   "difficulty_unlock_after": "IN 需 HD 920000；AT 需 IN 920000"
+  },
+  {
+   "title": "Luminescence",
+   "chapter": "Chapter 8",
+   "trigger": [
+    "在 The Chariot ~REVIIVAL~ 界面选中该曲任意难度但不要点击开始；",
+    "将设备物理旋转 180°（需开启自动旋转），界面自动跳转至 Luminescence。"
+   ],
+   "constraints": [
+    "游玩时背景变暗段落必须全连；烟花出现前分数至少达到 785000；",
+    "结算评级不得为 F，否则流程失败；完成后自动进入第二次 Retribution。"
+   ],
+   "difficulty_unlock_after": "IN 需 HD 920000；AT 需 IN 920000"
+  },
+  {
+   "title": "Retribution",
+   "chapter": "Chapter 8",
+   "trigger": [
+    "第一次：The Chariot ~REVIIVAL~ 达到 S 后自动进入；此阶段血条可放置。",
+    "第二次：Luminescence 触发条件完成后自动进入；此阶段血条不可放置。"
+   ],
+   "constraints": [
+    "第一次结算后解锁 DESTRUCTION 3,2,1；第二次需撑过出血条段（人声采样出现前不能归零），待血条变蓝锁血后方可放置。"
+   ],
+   "difficulty_unlock_after": "作为流程曲，其难度解锁不是章节推进的关键；常规 IN/AT 仍按全局规则处理"
+  },
+  {
+   "title": "DESTRUCTION 3,2,1",
+   "chapter": "Chapter 8",
+   "trigger": [
+    "第一次 Retribution 结束后自动进入。"
+   ],
+   "constraints": [
+    "首次解锁时会触发游戏崩溃式演出，重启后 Chapter 8 封面切换为本曲曲绘。",
+    "其 AT 为 special，但公开资料未给出稳定的官方触发步骤，仅标注 special，不虚构数值。"
+   ],
+   "difficulty_unlock_after": "AT 难度为 special；常规三难度由流程解锁"
+  },
+  {
+   "title": "Distorted Fate",
+   "chapter": "Chapter 8",
+   "trigger": [
+    "完成 Luminescence 条件并再次通过 Retribution 出血条段（采样出现前不归零，进入蓝色锁血）；",
+    "结算后出现 FIREWORK DATA PATCHER 面板，点击 START 播放解锁动画；",
+    "游玩一次后即解锁常规三难度。"
+   ],
+   "constraints": [
+    "Distorted Fate 解锁后 Chapter 8 恢复正常 UI，并出现 OS 切换键；",
+    "在解锁本曲前，Chapter 8 曲目不会出现在『全部歌曲』列表中。"
+   ],
+   "difficulty_unlock_after": "AT 需 IN 达到 920000（S）"
+  },
+  {
+   "title": "S.A.T.E.L.L.I.T.E.",
+   "chapter": "Extra Story 1 极星卫 / CYTUS II",
+   "trigger": [
+    "特殊异象，公开资料未完整记录触发参数。"
+   ],
+   "constraints": [
+    "不按 IN 920000 的常规 AT 规则处理；具体步骤待官方/实测核验。"
+   ],
+   "difficulty_unlock_after": "AT 为 special"
+  },
+  {
+   "title": "+ERABY+E CONNEC+10N",
+   "chapter": "Extra Story 1 极星卫",
+   "trigger": [
+    "特殊异象，公开资料未完整记录触发参数。"
+   ],
+   "constraints": [
+    "不按 IN 920000 的常规 AT 规则处理。"
+   ],
+   "difficulty_unlock_after": "AT 为 special"
+  },
+  {
+   "title": "You are the Miserable",
+   "chapter": "Ex-Lanota",
+   "trigger": [
+    "特殊异象，公开资料未完整记录触发参数。"
+   ],
+   "constraints": [
+    "其常规 EZ/HD 可见性为 free，但 AT 不按 IN 920000 常规链。"
+   ],
+   "difficulty_unlock_after": "AT 为 special"
+  },
+  {
+   "title": "Stasis",
+   "chapter": "Ex-Lanota",
+   "trigger": [
+    "特殊异象，公开资料未完整记录触发参数。"
+   ],
+   "constraints": [
+    "AT 不按 IN 920000 的常规 AT 规则处理。"
+   ],
+   "difficulty_unlock_after": "AT 为 special"
+  },
+  {
+   "title": "Shadow",
+   "chapter": "Ex-Lanota / 历史归属 Ex-姜米條",
+   "trigger": [
+    "特殊异象，公开资料未完整记录触发参数。"
+   ],
+   "constraints": [
+    "AT 不按 IN 920000 的常规 AT 规则处理；曲库历史迁移导致程序可能出现重复条目。"
+   ],
+   "difficulty_unlock_after": "AT 为 special"
+  },
+  {
+   "title": "Cuvism³",
+   "chapter": "Ex-Paradigm:Reboot",
+   "trigger": [
+    "特殊异象，公开资料未完整记录触发参数。"
+   ],
+   "constraints": [
+    "AT 不按 IN 920000 的常规 AT 规则处理。"
+   ],
+   "difficulty_unlock_after": "AT 为 special"
+  }
+ ]
+}

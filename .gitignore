@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.venv_build/
+venv/
+
+# 构建产物
+build/
+dist/
+*.spec
+
+# 用户数据（程序实际写在 %APPDATA%\PhigrosSaveEditor，这里只是兜底）
+downloads/
+backups/
+config.json
+
+# 存档文件（不要提交真实存档）
+*.save
+*.zip.txt
+
+# 图标生成脚本（一次性工具，不进仓库）
+tools_make_icon.py
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
